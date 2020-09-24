@@ -1,0 +1,166 @@
+{
+	"info": {
+		"_postman_id": "0fc61fc9-87a0-4763-9cd5-147acd85df22",
+		"name": "Bookstore",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET All Books",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/books",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Count Books",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/books/count",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"books",
+						"count"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Book WITH Id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"bookId\": \"00000000-0000-0000-0000-000000000007\",\r\n    \"isbn\": \"007_2\",\r\n    \"publisherId\": \"00000000-0000-0000-0000-000000000001\",\r\n    \"authorId\": \"00000000-0000-0000-0000-000000000001\",\r\n    \"title\": \"Destination 007_2\",\r\n    \"description\": \"The starship 007 go insane.\",\r\n    \"edition\": null,\r\n    \"price\": 50.97,\r\n    \"categoryId\": \"00000000-0000-0000-0000-000000000001\",\r\n    \"coverImage\": \"https://prodimage.images-bn.com/pimages/007.jpg\",\r\n    \"dimensions\": \"7.00(w) x 7.00(h) x 0.7(d)\",\r\n    \"quantity\": 7,\r\n    \"bookFormat\": \"Hardcover 7\",\r\n    \"publicationDate\": \"2017-07-17\",\r\n    \"pages\": 77\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/books",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Book NO Id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"isbn\": \"007\",\r\n    \"publisherId\": \"00000000-0000-0000-0000-000000000001\",\r\n    \"authorId\": \"00000000-0000-0000-0000-000000000001\",\r\n    \"title\": \"Destination 007\",\r\n    \"description\": \"The starship 007 go insane.\",\r\n    \"edition\": null,\r\n    \"price\": 50.97,\r\n    \"categoryId\": \"00000000-0000-0000-0000-000000000001\",\r\n    \"coverImage\": \"https://prodimage.images-bn.com/pimages/007.jpg\",\r\n    \"dimensions\": \"7.00(w) x 7.00(h) x 0.7(d)\",\r\n    \"quantity\": 7,\r\n    \"bookFormat\": \"Hardcover 7\",\r\n    \"publicationDate\": \"2017-07-17\",\r\n    \"pages\": 77\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/books",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Checkout",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/checkout",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"checkout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET a Book",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/books/3b284816-835d-4902-b283-fd91ac386933",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"books",
+						"3b284816-835d-4902-b283-fd91ac386933"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE a Book",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/books/3b284816-835d-4902-b283-fd91ac386933",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"books",
+						"3b284816-835d-4902-b283-fd91ac386933"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
